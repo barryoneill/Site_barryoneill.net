@@ -1,0 +1,122 @@
+/* 
+	main css for meep.nologin.net, including additional adjustments
+    based on CSS files from  http://www.getskeleton.com/	
+	
+	font import CSS inlined in HTML 
+*/
+
+body {	
+	margin: 8px;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+	font-family: Maven Pro; 
+}
+
+.social {
+	margin: 0;
+	padding: 10px;
+	list-style-type: none;
+	text-align: right;
+	
+}
+.social li { display: inline; padding-left: 5px; padding-right:5px; }
+.social li a { text-decoration: none; }
+
+/* the @media blocks (at the bottom of this file) hide/show these based on screen resolution - default normal on */
+.social_normal { display: block; }
+.social_small { display: none; }
+
+#header {
+
+	/* http://www.colorzilla.com/gradient-editor/ */
+	background: #20317c; /* Old browsers */
+	background: -moz-linear-gradient(left,  #20317c 0%, #356aa0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#20317c), color-stop(100%,#356aa0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #20317c 0%,#356aa0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #20317c 0%,#356aa0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #20317c 0%,#356aa0 100%); /* IE10+ */
+	background: linear-gradient(to right,  #20317c 0%,#356aa0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#20317c', endColorstr='#356aa0',GradientType=1 ); /* IE6-9 */
+	/* end gradient */
+	
+	-moz-border-radius: 10px;
+    border-radius: 10px;
+	
+		
+}
+
+#header h1, #header h2 {	
+	font-family: 'Raleway', serif;			
+	font-weight: bold;
+	color: white;
+	text-align: left;
+	margin-left: 10px;
+	margin: 0 10px 0 10px;
+}
+#header h1 { font-size: 46px; line-height: 50px; margin-bottom: 3px; margin-top: 5px; }
+#header h2 { font-size: 18px; line-height: 27px; margin-bottom: 8px; }
+
+#resume {
+	margin: 10px;
+	padding: 10px; 
+	background-color: #dddddd; 
+	-moz-border-radius: 5px; 
+	border-radius: 5px;
+	border: 1px solid #cccccc;
+}
+
+.project {
+	padding: 10px; 
+	background-color: #eeeeee; 
+	-moz-border-radius: 5px; 
+	border-radius: 5px;
+	min-height: 70px;
+}
+.project img {
+	float: left;
+	padding: 0 10px 0 0;
+}
+
+#footer {
+
+	margin-top: 20px; 
+	padding-top: 4px;
+	border-top: 1px solid #dddddd;
+	color: #777777;
+	
+	text-align: center; 
+	font-style:italic; 
+
+}	
+	
+.container {	
+	margin-top: 10px;
+}
+
+/* #Tablet (Portrait) - Note: Design for a width of 768px */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+		/* not much to do */
+}
+
+/* #Mobile (Landscape) - Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.social { text-align: center; } 
+	.social_normal { display: none; }
+	.social_small { display: block; }
+	#header h1, #header h2 {text-align: center;}
+}
+
+	
+/*  #Mobile (Portrait) - Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {        
+	.social { text-align: center; }		
+	.social_normal { display: none; }
+	.social_small { display: block; }
+	#header h1, #header h2 { text-align: center; }
+}
+
+
+
+
+
