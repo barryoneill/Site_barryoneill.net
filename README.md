@@ -1,6 +1,6 @@
 # Site_meep.nologin.net #
 
-The contents of my website at <a href="http://meep.nologin.net">http://meep.nologin.net</a>.  
+The contents of my website at <a href="http://barryoneill.net">http://barryoneill.net</a>.  
 
 Implemented using the <a href="getskeleton.com">Skeleton</a> responsive design library. 
 
@@ -15,7 +15,7 @@ The social media icons are provided by <a href="">Adam Fairhead's WebIcons proje
 is a submodule mapped to *images/webicons*, and needs to be updated manually after cloning this repo, eg:
 
 ```
-> git clone https://github.com/barryoneill/Site_meep.nologin.net.git mysite
+> git clone https://github.com/barryoneill/Site_barryoneill.net.git mysite
  Cloning into 'mysite'...
  [snip]
  Unpacking objects: 100% (16/16), done.
