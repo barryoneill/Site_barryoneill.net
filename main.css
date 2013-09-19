@@ -6,7 +6,7 @@
 */
 
 body {	
-	margin: 8px;
+	margin: 8px;    
 }
 
 h1, h2, h3, h4, h5, h6 { 
@@ -92,6 +92,10 @@ h1, h2, h3, h4, h5, h6 {
 	
 .container {	
 	margin-top: 10px;
+}
+
+.newsSpan {
+    color: red;
 }
 
 /* #Tablet (Portrait) - Note: Design for a width of 768px */
